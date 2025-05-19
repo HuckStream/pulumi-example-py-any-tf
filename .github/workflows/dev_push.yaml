@@ -13,7 +13,7 @@ jobs:
         with:
           node-version-file: package.json
       - run: npm install
-      - uses: pulumi/actions@v5
+      - uses: pulumi/actions@v6
         with:
           command: up
           stack-name: HuckStream/Pulumi-Example-Any-TF/dev
