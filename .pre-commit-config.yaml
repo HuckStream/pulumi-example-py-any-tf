@@ -1,11 +1,11 @@
 repos:
   - repo: https://github.com/gitguardian/ggshield
-    rev: v1.30.2
+    rev: v1.39.0
     hooks:
       - id: ggshield
         language_version: python3
-        stages: [pre-commit, pre-push]
+        stages: [commit, push]
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v3.29.0
+    rev: v4.7.2
     hooks:
       - id: commitizen
