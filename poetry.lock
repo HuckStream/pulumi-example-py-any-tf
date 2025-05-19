@@ -232,6 +232,25 @@ pyyaml = ">=6.0,<7.0"
 semver = ">=3.0,<4.0"
 
 [[package]]
+name = "pulumi-opensearch"
+version = "2.3.1"
+description = "A Pulumi provider dynamically bridged from opensearch."
+optional = false
+python-versions = ">=3.9"
+groups = ["main"]
+files = []
+develop = false
+
+[package.dependencies]
+parver = ">=0.2.1"
+pulumi = ">=3.165.0,<4.0.0"
+semver = ">=2.8.1"
+
+[package.source]
+type = "directory"
+url = "sdks/opensearch"
+
+[[package]]
 name = "pulumi-random"
 version = "3.7.2"
 description = "A Pulumi provider dynamically bridged from random."
@@ -328,4 +347,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "4f0a9fba243824e6a57e5c04fd1f132e01f61c447a248f66c66123c95de62b59"
+content-hash = "84ad14762166917088a6966f82dee4b04fbe9509efb34c62778d768f03df86c0"

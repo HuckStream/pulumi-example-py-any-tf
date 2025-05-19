@@ -1,0 +1,10 @@
+{
+  "resource": true,
+  "name": "terraform-provider",
+  "version": "0.11.0",
+  "parameterization": {
+    "name": "opensearch",
+    "version": "2.3.1",
+    "value": "eyJyZW1vdGUiOnsidXJsIjoicmVnaXN0cnkub3BlbnRvZnUub3JnL29wZW5zZWFyY2gtcHJvamVjdC9vcGVuc2VhcmNoIiwidmVyc2lvbiI6IjIuMy4xIn19"
+  }
+}
