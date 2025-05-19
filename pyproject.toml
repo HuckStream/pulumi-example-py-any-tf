@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pulumi-example-py-any-tf"
+version = "0.1.0"
+description = "An example using Pulumi and Python to install and use any Terraform provider"
+authors = ["Christopher Koning <christopher.koning@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pulumi = "^3.170"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
