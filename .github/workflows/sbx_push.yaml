@@ -1,0 +1,24 @@
+name: Pulumi Update Sandbox
+on:
+  push:
+    branches:
+      - sbx
+jobs:
+  update:
+    name: Update Sandbox
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install and configure Poetry
+        uses: snok/install-poetry@v1
+      - name: Install dependencies
+        run: poetry install
+      - uses: pulumi/actions@v6
+        with:
+          command: up
+          stack-name: HuckStream/Pulumi-Example-Any-TF/sbx
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
