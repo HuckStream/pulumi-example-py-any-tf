@@ -3,3 +3,9 @@ runtime:
   name: python
   options:
     toolchain: poetry
+packages:
+  random:
+    source: terraform-provider
+    version: 0.11.0
+    parameters:
+      - hashicorp/random
