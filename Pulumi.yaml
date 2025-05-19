@@ -1,0 +1,5 @@
+name: Pulumi-Example-Any-TF
+runtime:
+  name: python
+  options:
+    toolchain: poetry
